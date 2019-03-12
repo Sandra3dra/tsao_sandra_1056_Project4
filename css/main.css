@@ -1,2 +1,61 @@
 @charset "utf-8";
 /*css file*/
+
+#container {
+	max-width: 1140px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+
+h2 {
+	line-height: 100px;
+}
+
+.hidden {
+	display: none;
+}
+
+.box {
+	text-align: center;
+	margin: 10px;
+	height: 500px;
+	flex: 1 1 auto;
+}
+
+.b1 {
+	background-color: blue;
+}
+
+.b2 {
+	background-color: purple;
+}
+
+.b3 {
+	background-color: grey;
+}
+
+.b4 {
+	background-color: brown;
+}
+
+@media screen and (max-width: 641px) {
+	#container {
+		display: flex;
+		flex-direction: column;
+	}
+	.b1 {
+	background-color: pink;
+	flex: 1 1 auto;
+	}
+	.b2 {
+	background-color: red;
+	flex: 1 1 auto;
+	}
+	.b3 {
+		display: none;
+	}
+	.b4 {
+		display: none;
+	}
+}
